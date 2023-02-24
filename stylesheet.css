@@ -1,40 +1,39 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@600&display=swap);
 html body {
-    background-color: white;
-    overflow-x: hidden;
+    background-color: rgb(30, 30, 30);
+    overflow-x: visible;
     height: 100%;
     width: 100%;
-    margin: 0;
 }
 h1 {
-    border-bottom: solid 2px blue;
-    text-align: left;
+    border-bottom: solid 5px blue;
+    font-size: 300%;
+    letter-spacing: 10px;
 }
-p, h1 {
+h1, p {
     font-family: 'Roboto';
 }
-.wrapper {
-    margin: 0;
-    height: 100%;
+p {
+    padding-bottom: 5%;
+    font-size: 150%;
 }
-.content {
-    height: 100%;
-    width: 100%;
+.container {
+    width: 1700px;
+    height: 2400px;
+    background-color: white;
+    margin: auto;
 }
-.profile{
-    background-color: #f4f4f4;
-    float: right;
-    text-align: left;
-    border-left: solid 100px blue;
-    height: 300px;
+.profile {
+    background-color: rgb(243, 243, 243);
+    padding-left: 500px;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-left: solid 200px blue;
 }
-.profile h1 {
-}
-.profile h1, .profile p {
-}
-.content .work h1{
-    margin-top: 0;
-}
-.content .work p{
+.info {
+    padding-left: 700px;
+    padding-right: 5%;
+    padding-top: 5%;
 }
