@@ -3,8 +3,6 @@
 html body {
     background-color: rgb(30, 30, 30);
     overflow-x: visible;
-    height: 100%;
-    width: 100%;
     margin: 0;
 }
 h1 {
@@ -17,13 +15,16 @@ h1, p {
 }
 p {
     padding-bottom: 5%;
-    font-size: 150%;
+    font-size: 200%;
 }
 .container {
     width: 1700px;
     height: 2400px;
     background-color: white;
+    transform: scale(50%);
+    transform-origin: top left;
     margin: auto;
+    padding-bottom: solid blue 100px;
 }
 .headshot img {
     object-fit: cover;
@@ -58,14 +59,20 @@ p {
 }
 span.blue {
     color: blue;
-    font-size: 500%;
     padding-left: 50px;
 }
-.contact {
+span.small {
+    font-size: 350%;
+    letter-spacing: 2px;
+}
+.contact, .skills {
     padding-top: 80px;
 }
-.contact ul li {
+ul li {
     font-family: 'Roboto';
     font-size: 200%;
-    padding-top: 10px;
+    padding-top: 20px;
+}
+li::marker {
+    color: blue;
 }
