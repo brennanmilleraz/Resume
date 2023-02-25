@@ -5,6 +5,7 @@ html body {
     overflow-x: visible;
     height: 100%;
     width: 100%;
+    margin: 0;
 }
 h1 {
     border-bottom: solid 5px blue;
@@ -59,4 +60,12 @@ span.blue {
     color: blue;
     font-size: 500%;
     padding-left: 50px;
+}
+.contact {
+    padding-top: 80px;
+}
+.contact ul li {
+    font-family: 'Roboto';
+    font-size: 200%;
+    padding-top: 10px;
 }
