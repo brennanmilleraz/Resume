@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@600&display=swap);
 html body {
     background-color: rgb(30, 30, 30);
-    overflow-x: visible;
+    overflow-x: hidden;
     margin: 0;
     display: inline-flex;
     height: 20px;
@@ -24,9 +24,8 @@ p {
     height: 2400px;
     background-color: white;
     transform: scale(50%);
-    transform-origin: top left;
+    transform-origin: 25% 0px;
     margin: auto;
-    padding-bottom: solid blue 100px;
 }
 .headshot img {
     object-fit: cover;
@@ -85,6 +84,7 @@ li::marker {
 @media print {
     .container {
         transform: scale(65%);
+        transform-origin: top left;
     }
     html body {
         height: 0;
