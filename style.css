@@ -2,10 +2,11 @@
 @import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@600&display=swap);
 html body {
     background-color: rgb(30, 30, 30);
-    overflow-x: hidden;
+    overflow-x: visible;
     margin: 0;
-    display: inline-flex;
+    display: grid;
     height: 20px;
+    justify-content: center;
 }
 h1 {
     border-bottom: solid 5px blue;
@@ -24,14 +25,18 @@ p {
     height: 2400px;
     background-color: white;
     transform: scale(50%);
-    transform-origin: 25% 0px;
-    margin: auto;
+    transform-origin: top center;
+}
+.headshot {
+    overflow: hidden;
 }
 .headshot img {
+    transform: scale(180%);
+    transform-origin: 40% center;
     object-fit: cover;
     width: 527px;
     height: 744px;
-    image-resolution: auto;
+    image-rendering: -moz-crisp-edges;
 }
 .profile {
     background-color: rgb(243, 243, 243);
@@ -60,7 +65,7 @@ p {
 }
 span.blue {
     color: blue;
-    padding-left: 50px;
+    padding-left: 5%;
 }
 span.small {
     font-size: 350%;
@@ -83,7 +88,7 @@ li::marker {
 }
 @media print {
     .container {
-        transform: scale(65%);
+        transform: scale(25%);
         transform-origin: top left;
     }
     html body {
